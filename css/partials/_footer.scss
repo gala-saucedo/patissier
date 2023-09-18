@@ -1,0 +1,72 @@
+footer {
+    width: 100%;
+    background: $color-fondo;
+    color: $color-texto;
+
+    .pie {
+        
+        max-width: 1200px;
+        display: flex;
+        margin: auto;
+        padding: 20px;
+        justify-content: space-between;
+
+        .colum1 {
+            max-width: 400px;
+            & p {
+                font-size: 14px;
+                color: #c7c7c7;
+                margin-top: 20px;
+            }
+            .nombre {
+
+                display: table;
+                bottom: 0;
+                left: 0;
+            }
+        }
+        .colum2 {
+            max-width: 400px;
+            
+            .redes {
+                margin-right: 4rem;
+            }
+
+            & .row {
+                margin-top: 20px;
+                display: flex;
+
+                $redes-sociales: (
+                instagram: rgb(172, 61, 148),
+                facebook: rgb(26, 26, 221),
+                twitter: rgb(0, 157, 255),
+                youtube: red
+            );
+
+            @each $red, $color in $redes-sociales {
+                
+                .red-#{$red} {
+                    background-color: $color;
+                    text-align: center;
+                    color: rgb(230, 229, 229);
+                    font-size: 15px;
+                    margin-top: 10px;
+                    
+                    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                    text-decoration: none;
+                }
+            }
+            }
+            .row2 {
+                margin-top: 20px;
+            
+            }
+            
+        }
+        .colum3 {
+            max-width: 400px;
+
+            
+        }
+    }
+}

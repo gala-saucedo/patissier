@@ -1,0 +1,325 @@
+body {
+  background-image: url(/img/fondo9.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+}
+
+* {
+  margin: 0;
+  padding: 0%;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+
+* {
+  margin: 0;
+  padding: 0%;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+
+.titulo-principal {
+  color: rgb(236, 169, 69);
+  margin: 20px;
+}
+
+.grid {
+  display: grid;
+  color: rgb(255, 255, 255);
+  min-height: 100vh;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas: "inicio     medialuna      croissant" "inicio     sfogliatella   panchocolate";
+  gap: 20px;
+  margin: 2rem;
+}
+.grid .sub {
+  font-family: "Courier New", Courier, monospace;
+  font-size: 1.4rem;
+}
+.grid .inv {
+  border: dashed;
+  background-color: rgb(255, 255, 255);
+  color: black;
+}
+.grid .inicio {
+  text-align: center;
+  grid-area: inicio;
+  margin-top: 10px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+.grid .comida {
+  background-size: cover;
+  background-position: center;
+  transition: 500ms;
+  border-radius: 10px;
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-align: center;
+  font-size: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.grid .comida:hover {
+  transform: scale(110%);
+}
+.grid .media {
+  grid-area: medialuna;
+  background-image: url(../img/medialunas-ap.webp);
+}
+.grid .croissant {
+  grid-area: croissant;
+  background-image: url(../img/Croissant.jpg);
+}
+.grid .sfoglia {
+  grid-area: sfogliatella;
+  background-image: url(../img/sfogliatella.2.jpg);
+}
+.grid .pan {
+  grid-area: panchocolate;
+  background-image: url(../img/panchocolate.jpg);
+}
+
+.receta {
+  margin: 4rem;
+  color: rgb(236, 169, 69);
+  text-align: center;
+}
+
+footer {
+  width: 100%;
+  background: rgba(31, 38, 70, 0.466);
+  color: rgb(255, 255, 255);
+}
+footer .pie {
+  max-width: 1200px;
+  display: flex;
+  margin: auto;
+  padding: 20px;
+  justify-content: space-between;
+}
+footer .pie .colum1 {
+  max-width: 400px;
+}
+footer .pie .colum1 p {
+  font-size: 14px;
+  color: #c7c7c7;
+  margin-top: 20px;
+}
+footer .pie .colum1 .nombre {
+  display: table;
+  bottom: 0;
+  left: 0;
+}
+footer .pie .colum2 {
+  max-width: 400px;
+}
+footer .pie .colum2 .redes {
+  margin-right: 4rem;
+}
+footer .pie .colum2 .row {
+  margin-top: 20px;
+  display: flex;
+}
+footer .pie .colum2 .row .red-instagram {
+  background-color: rgb(172, 61, 148);
+  text-align: center;
+  color: rgb(230, 229, 229);
+  font-size: 15px;
+  margin-top: 10px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-decoration: none;
+}
+footer .pie .colum2 .row .red-facebook {
+  background-color: rgb(26, 26, 221);
+  text-align: center;
+  color: rgb(230, 229, 229);
+  font-size: 15px;
+  margin-top: 10px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-decoration: none;
+}
+footer .pie .colum2 .row .red-twitter {
+  background-color: rgb(0, 157, 255);
+  text-align: center;
+  color: rgb(230, 229, 229);
+  font-size: 15px;
+  margin-top: 10px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-decoration: none;
+}
+footer .pie .colum2 .row .red-youtube {
+  background-color: red;
+  text-align: center;
+  color: rgb(230, 229, 229);
+  font-size: 15px;
+  margin-top: 10px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-decoration: none;
+}
+footer .pie .colum2 .row2 {
+  margin-top: 20px;
+}
+footer .pie .colum3 {
+  max-width: 400px;
+}
+
+@media (max-width: 990px) {
+  .grid {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 0;
+    grid-template-areas: "inicio inicio" "medialuna croissant" "sfogliatella panchocolate";
+  }
+  .catalogo {
+    display: grid;
+  }
+}
+@media (max-width: 600px) {
+  .grid {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    gap: 0;
+    justify-content: center;
+    grid-template-areas: "inicio" "medialuna" "croissant" "sfogliatella" "panchocolate";
+  }
+  .comida {
+    width: 470px;
+    height: 500px;
+    margin-top: 2rem;
+  }
+}
+@media (max-width: 1000px) {
+  footer .pie {
+    display: grid;
+    justify-content: center;
+  }
+  .container .row {
+    display: grid;
+  }
+  .container .row .texto {
+    width: 90%;
+    margin: 2rem;
+  }
+  .container .row .carrusel {
+    width: 80%;
+    margin: 2rem;
+  }
+}
+@media (max-width: 780px) {
+  .rece {
+    text-align: center;
+  }
+  .rece .lista {
+    margin: 2rem;
+  }
+  .cuadricula .cuadros {
+    display: grid;
+  }
+  .cuadricula .cuadros .container-fluid {
+    justify-content: center;
+  }
+}
+.container .row {
+  margin-bottom: 20px;
+}
+.container .texto {
+  color: aliceblue;
+  text-align: center;
+  font-family: sans-serif;
+  border: solid;
+}
+.container .grid-container {
+  display: grid;
+  min-height: 100vh;
+  font-size: 19px;
+  background-color: rgba(0, 0, 0, 0.862);
+  color: rgb(255, 255, 255);
+  margin: 10px;
+}
+.container .grid-container .boton {
+  text-align: center;
+}
+.container .grid-container .boton .ver-rece {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+}
+
+.rece {
+  background-color: rgba(31, 38, 70, 0.466);
+}
+.rece .col-md-4 {
+  color: #ffffff;
+}
+.rece .col-md-4 .ingredientes {
+  text-align: center;
+  font-size: 25px;
+  margin-top: 5rem;
+}
+.rece .col-md-4 .lista {
+  font-size: 20px;
+  margin-right: 65px;
+}
+
+.container-fluid {
+  background-image: linear-gradient(to right, rgb(255, 247, 247), rgb(74, 106, 148), rgb(18, 29, 67));
+}
+
+.navbar-nav :hover {
+  background: rgb(255, 255, 255);
+  transform: scale(110%);
+  transition: 0.5s;
+}
+
+.cuadricula {
+  width: 90%;
+  margin: 10px auto;
+}
+.cuadricula .cuadros {
+  gap: 1rem;
+}
+.cuadricula .cuadros .cuadro {
+  background-color: rgb(192, 186, 186);
+}
+
+.catalogo {
+  text-align: center;
+  display: flex;
+}
+.catalogo .catalogocomida {
+  color: aliceblue;
+}
+.catalogo .catalogocomida .imgcatalogo {
+  width: 25%;
+  margin: 1rem;
+  border-radius: 1rem;
+}
+
+.contacto {
+  margin: 5rem;
+  color: aqua;
+}
+
+.subtitulo {
+  color: aliceblue;
+  text-align: center;
+  margin: 3rem;
+}
+.subtitulo .sub {
+  font-size: 2rem;
+  font-family: "Courier New", Courier;
+  font-weight: bold;
+}
+
+.texto-contacto {
+  color: aliceblue;
+  margin: 4rem;
+  text-align: left;
+  font-size: 1.5rem;
+  font-family: "Courier New", Courier, monospace;
+}/*# sourceMappingURL=estilos.css.map */

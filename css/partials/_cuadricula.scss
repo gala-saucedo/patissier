@@ -1,0 +1,11 @@
+.cuadricula {
+    width: 90%;
+    margin: 10px auto;
+    .cuadros {
+        gap: 1rem;
+        .cuadro {
+            background-color: rgb(192, 186, 186);
+        }
+    }
+    
+}

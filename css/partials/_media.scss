@@ -1,0 +1,72 @@
+@media (max-width: 990px) {
+    .grid {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        gap: 0;
+        grid-template-areas: 
+    "inicio inicio"   
+    "medialuna croissant"
+    "sfogliatella panchocolate";
+    }  
+    .catalogo {
+        display: grid;
+    }
+}
+@media (max-width:600px) {
+     .grid {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+        gap: 0;
+        justify-content: center;
+        grid-template-areas: 
+        "inicio"   
+        "medialuna"
+        "croissant"
+        "sfogliatella" 
+        "panchocolate";
+        }
+        .comida {
+            width: 470px;
+            height: 500px;
+            margin-top: 2rem;
+            
+           
+        }
+
+    }
+
+
+@media (max-width:1000px) {
+    footer .pie {
+        display: grid;
+        justify-content: center; 
+    }
+    .container .row {
+        display: grid;
+
+        .texto {
+            width: 90%;
+            margin: 2rem;
+        }   
+        .carrusel {
+            width: 80%;
+            margin: 2rem;
+        }
+    } 
+}
+@media (max-width:780px) {
+    .rece {
+        text-align: center;
+
+        .lista {
+            margin: 2rem;
+        }
+    }
+    .cuadricula .cuadros {
+        display: grid;
+
+        .container-fluid {
+            justify-content: center;
+        }
+    }
+}

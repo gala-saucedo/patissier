@@ -1,0 +1,29 @@
+.container {
+  
+    .row {
+      
+      margin-bottom: 20px;
+    }
+  
+  .texto {
+    color: aliceblue;
+    text-align: center;
+    font-family: sans-serif;
+    border: solid;}
+  
+  .grid-container {
+    display: grid;
+    min-height: 100vh;
+    font-size: 19px;
+    background-color: rgba(0, 0, 0, 0.862);
+    color: rgb(255, 255, 255);
+    margin: 10px;
+      .boton {
+        text-align: center;
+        .ver-rece {
+          color: rgb(255, 255, 255);
+          text-decoration: none;
+        }
+      }
+    }    
+}

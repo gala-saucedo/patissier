@@ -1,0 +1,73 @@
+.grid {
+    display: grid;
+    color: $color-texto;
+    min-height: 100vh;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 
+    "inicio     medialuna      croissant"
+    "inicio     sfogliatella   panchocolate";
+    gap: 20px;
+    margin: 2rem;
+
+    .sub {
+        font-family: 'Courier New', Courier, monospace;
+        font-size: 1.4rem;
+        
+    }
+    .inv {
+        border: dashed;
+        background-color: rgb(255, 255, 255);
+        color: black;
+    }
+
+    .inicio {
+        text-align: center;
+        grid-area: inicio;
+        margin-top: 10px;
+        font-family: $tipo-texto;
+        
+    }
+
+    .comida {
+        background-size: cover; 
+        background-position: center;
+        transition: 500ms;
+        border-radius: 10px;
+        text-decoration: none;
+        color: rgb(255, 255, 255);
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        text-align: center;
+        font-size: 2rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        &:hover {
+            transform: scale(110%);
+        }
+    }
+    
+    .media {
+        grid-area: medialuna;
+        background-image: url(../img/medialunas-ap.webp);
+        
+    }
+
+    .croissant {
+        grid-area: croissant;
+        background-image: url(../img/Croissant.jpg);
+    
+    }
+
+    .sfoglia {
+        grid-area: sfogliatella;
+        background-image: url(../img/sfogliatella.2.jpg);
+    }
+
+    .pan {
+        grid-area: panchocolate;
+        background-image: url(../img/panchocolate.jpg);
+    }
+
+}
